@@ -1,2 +1,2 @@
 # Weapon-generator
-A random weapon name generator written in python. It is bad
+A random thing generator written in python. It is bad
