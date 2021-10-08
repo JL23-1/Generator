@@ -5,10 +5,10 @@ while True:
 
     if prompt == '?':
         print(
-        'Welcome to the help text\nThis is a list of commands\nweapon -- generates a random weapon name\nsandwich -- generates a random sandwich\nthreat -- generates a random threat\nhelp or ? -- prints this help text\nversion -- prints version\nq -- exits the generator'
+        'Welcome to the help text\nThis is a list of commands\nweapon -- generates a random weapon name\nsandwich -- generates a random sandwich\nthreat -- generates a random threat\nidea -- generates a programming idea\nhelp or ? -- prints this help text\nversion -- prints version\nq -- exits the generator'
         )
     elif prompt == 'help':
-            print("Welcome to the help text\nThis is a list of commands\nweapon -- generates a random weapon name\nsandwich -- generates a random sandwich\nthreat -- generates a random threat\nq -- exits the generator")
+            print("Welcome to the help text\nThis is a list of commands\nweapon -- generates a random weapon name\nsandwich -- generates a random sandwich\nthreat -- generates a random threat\nidea -- generates a programming idea\nhelp or ? -- prints this help text\nversion -- prints version\nq -- exits the generator")
     elif prompt == 'q':
        exit()
     elif prompt == 'weapon':
@@ -40,14 +40,15 @@ while True:
         print('\nI will ' +random.choice(part1)+ ' your ' +random.choice(part2)+ '\n')
     elif prompt == 'version':
         print('version 1.0')
-    elif prompt == 'armor':
-        modifier = ['guarding', 'wise', 'titanic', 'pure', 'fierce', 'spiked']
-        helmet = ['mask', 'helmet', 'mask', 'headgear']
-        chestplate = ['scale mail', 'chestplate', 'shell', 'coat']
-        leg = ['greaves', 'leggings']
-        shoes = ['boots', 'slippers', 'shoes']
-        material = ['iron', 'mythril', 'titanium', 'bone', 'cobalt', 'flesh', 'wooden', 'leather', 'chain', 'darkness', 'zombie', 'skeleton', 'slime']
-        print(random.choice(modifier) + ' ' + random.choice(material) + ' ' + random.choice(helmet) + '\n' + random.choice(modifier) + ' ' + random.choice(material) + ' ' + random.choice(chestplate) + '\n' + random.choice(modifier) + ' ' + random.choice(material) + ' ' + random.choice(leg) + '\n' + random.choice(modifier) + ' ' + random.choice(material) + ' ' + random.choice(shoes))
+    elif prompt == 'idea':
+        lang = ['python', 'c#', 'rust', 'ruby', 'java', 'javascript', 'c++', 'brainfuck']
+        project = ['compiler', 'web server', 'game', 'os kernel', 'shell', 'programming language', 'visual novel', 'a script that uploads itself to github', 'a github gui', 'a ur mom joke generator']
+        trueproj = (random.choice(project))
+        if trueproj == ('compiler'):
+
+            print(random.choice(lang) + ' ' + trueproj + ' in ' + random.choice(lang))
+        else:
+            print(trueproj + ' in ' + random.choice(lang))
     else:
         print('\nUnknown Command\nTry typing help or ?\n')
     
